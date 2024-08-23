@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+    <h1 class="cls">Krishna</h1>
+
+
+    <script>
+
+        a = document.querySelectorAll("h1");
+        for(i=0; i<a.length; i++){
+            a[i].innerHTML = i+1 + " " + a[i].innerHTML;
+            console.log(a.innerText);
+        }
+        console.log(a);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var data= [{
+    "id": 4,
+    "title": "Mens Casual Slim Fit",
+    "price": 15.99,
+    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 430
+    }
+  }]
+ 
+   var div = document.createElement("div");
+   document.body.appendChild(div);
+ 
+   var img = document.createElement("img");
+   img.src = data[0].image;
+   img.width = 200;
+   img.height= 200;
+ 
+   var title = document.createElement("h1");
+   title.innerText = data[0].title;
+ 
+   var para = document.createElement("p");
+   para.innerText = data[0].description
+ 
+   var btn_tag = document.createElement("button")
+   btn_tag.innerText = "Click Here";
+ 
+   btn_tag.addEventListener("click",hello);
+ 
+     function hello(){
+         window.open("./Task13.html", "_self");
+     }
+ 
+     div.appendChild(img);
+     div.appendChild(title);
+     div.appendChild(para);
+     div.appendChild(btn_tag);
+ 
+     document.body.appendChild(div);
+ 
+     </script>
+
+
+</body>
+</html>

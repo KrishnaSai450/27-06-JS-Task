@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        var data = [ {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 120
+    }
+  }]
+
+  var div = document.createElement("div");
+  document.body.appendChild(div);
+
+  var img = document.createElement("img");
+  img.src = data[0].image;
+  img.width = 200;
+  img.height= 200;
+
+  var title = document.createElement("h1");
+  title.innerText = data[0].title;
+
+  var para = document.createElement("p");
+  para.innerText = data[0].description
+
+  var btn_tag = document.createElement("button")
+  btn_tag.innerText = "Click Here";
+
+  btn_tag.addEventListener("click",hello);
+
+    function hello(){
+        window.open("./Task10.html", "_self");
+    }
+
+    div.appendChild(img);
+    div.appendChild(title);
+    div.appendChild(para);
+    div.appendChild(btn_tag);
+
+    document.body.appendChild(div);
+
+
+    </script>
+</body>
+</html>

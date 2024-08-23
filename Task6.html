@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        image{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Hello</h1>
+
+
+
+    <script>
+
+        var image = document.createElement("img");
+        image.src = "https://www.kindpng.com/picc/m/99-999603_png-light-bulb-off-transparent-png.png";
+        image.width = 200;
+        image.height = 200;
+
+        image.addEventListener("click", hii);
+
+        function hii(){
+            if(image.src.match("bulb-off")){
+                image.src="https://media.tenor.com/Uv6XHpQIDxEAAAAj/light-bulb-light.gif";
+            }
+            else{
+                image.src = "https://www.kindpng.com/picc/m/99-999603_png-light-bulb-off-transparent-png.png"
+            }
+        }
+
+        document.body.appendChild(image);
+
+        
+
+    </script>
+</body>
+</html>
